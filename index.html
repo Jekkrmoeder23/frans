@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Frans - Nederlands Woordenschat Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 2rem; text-align: center; }
+        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+        input[type="text"] { padding: 0.5rem; width: 80%; margin: 1rem 0; font-size: 1rem; }
+        button { padding: 0.6rem 1rem; margin: 0.5rem; font-size: 1rem; cursor: pointer; }
+        .correct { color: green; font-weight: bold; }
+        .incorrect { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Frans - Nederlands Woordenschat Quiz</h1>
+        <div id="question-box">
+            <p id="question">Vraag wordt geladen...</p>
+            <input type="text" id="answer" placeholder="Typ hier je antwoord">
+            <div id="feedback"></div>
+            <div>
+                <button onclick="checkAnswer()">Controleren</button>
+                <button onclick="nextQuestion()">Volgende</button>
+                <button onclick="skipQuestion()">Skip</button>
+            </div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+</body>
+</html>
